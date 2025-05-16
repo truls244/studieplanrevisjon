@@ -1,0 +1,17 @@
+.LoginContainer {
+    margin-left: 15px;
+    border: 1px black;
+    padding: 20px;
+}
+
+.LoginElement {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.LoginError {
+    font-weight: bold;
+    background-color: #E64046;
+    max-width: fit-content;
+    padding: 5px;
+}

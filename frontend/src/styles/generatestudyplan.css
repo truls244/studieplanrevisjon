@@ -1,0 +1,165 @@
+
+.studyprogram-columns {
+    display: flex;
+    gap: 20px; 
+    margin-top: 20px;
+  }
+  
+  
+.studyprogram-column {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1; 
+  text-align: left;
+}
+  
+.generate-studyplan-container {
+    padding: 20px;
+  }
+  
+.semester-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.semester-column {
+  flex: 1; 
+}
+
+.semester-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.semester-box h3 {
+  margin-top: 0;
+}
+
+.semester-credits {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-weight: bold;
+  text-align: right;
+}
+
+button {
+  margin-left: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+.save-studyplan-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.save-studyplan-button:hover {
+  background-color: #388e3c;
+}
+
+
+
+.search-bar {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  margin-top: 2px;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  list-style-type: none;
+}
+
+.autocomplete-dropdown li {
+  padding: 10px;
+  list-style: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.autocomplete-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.search-bar-container {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.search-bar-container > * {
+  flex-shrink: 0; 
+}
+
+
+.search-bar-container .search-bar {
+  flex: 1; 
+  
+}
+
+
+.search-bar-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px; 
+}
+
+
+.search-bar-container .add-button {
+  padding: 10px 40px;
+  background-color: #0000FF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar-container .add-button:disabled {
+  background-color: #ccc; 
+  cursor: not-allowed;
+} 

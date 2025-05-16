@@ -1,0 +1,190 @@
+.notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+.notification-badge {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.notification-badge:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.badge-icon {
+  font-size: 20px;
+}
+
+.badge-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff4757;
+  color: white;
+  border-radius: 50%;
+  min-width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(25%, -25%);
+}
+
+/* Notification overlay styles */
+.notification-overlay {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  left: 0;
+  width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  overflow: hidden;
+  max-height: 80vh;
+  padding-bottom: 3em;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+.notification-body {
+  padding: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.notification-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #666;
+}
+
+.notification-list {
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.notification-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+  display: flex;
+}
+
+.notification-item:hover {
+  background-color: #f5f5f5;
+}
+
+.notification-item.unread {
+  background-color: #f0f7ff;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-content p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.notification-meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.no-notifications {
+  padding: 24px 16px;
+  text-align: center;
+  color: #666;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.conflict-program {
+  margin-bottom: 1.5rem;
+  padding: 0.75rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.conflict-program h4 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.conflict-detail {
+  font-size: 0.9rem;
+  color: #666;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+.warning-text {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #fff7e6;
+  border-left: 4px solid #ff9800;
+}
+
+.notification-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  overflow-y: auto;
+}
+
+.cancel-button {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

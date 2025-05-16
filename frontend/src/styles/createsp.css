@@ -1,0 +1,359 @@
+.create-studyplan-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+  color: #333;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c62828;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #2e7d32;
+}
+
+.setup-section,
+.add-courses-section,
+.semesters-section,
+.actions-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+
+.search-results li:hover {
+  background-color: #f5f5f5;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary-button {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.primary-button:hover:not(:disabled) {
+  background-color: #1565c0;
+}
+
+.add-button {
+  background-color: #388e3c;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.add-button:hover:not(:disabled) {
+  background-color: #2e7d32;
+}
+
+.save-button {
+  background-color: #d32f2f;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+}
+
+.save-button:hover:not(:disabled) {
+  background-color: #c62828;
+}
+
+.semesters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.semester-card {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.semester-header {
+  background-color: #e3f2fd;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.semester-credits {
+  background-color: #bbdefb;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.courses-container {
+  padding: 15px;
+}
+
+.mandatory-courses,
+.elective-courses,
+.elective-category {
+  margin-bottom: 20px;
+}
+
+h4,
+h5 {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.course-info {
+  flex-grow: 1;
+}
+
+.course-credits {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.remove-button {
+  background-color: transparent;
+  color: #f44336;
+  padding: 2px 6px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.remove-button:hover {
+  background-color: #ffebee;
+}
+
+.empty-message {
+  color: #999;
+  font-style: italic;
+}
+
+.category-selector {
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-result-item {
+  padding: 12px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #f0f8ff;
+}
+
+.selected-program {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #e8f4fd;
+  border-radius: 4px;
+  border-left: 4px solid #1976d2;
+}
+
+.search-loading {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.valgemne-item {
+  background-color: #f0f7ff;
+  border-left: 3px solid #4285f4;
+  margin-top: 10px;
+}
+
+.valgemne-preview {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 4px;
+}
+
+.manage-electives-button {
+  background-color: #e8f0fe;
+  border: 1px solid #a8c7fa;
+  color: #1a73e8;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.manage-electives-button:hover {
+  background-color: #d2e3fc;
+}
+
+.semester-columns-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.semester-pair {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.semester-details {
+  flex: 1;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.search-courses-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-results-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px 0;
+}
+
+
+.create-studyplan-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-courses-section,
+.semesters-section {
+  margin-top: 30px;
+}

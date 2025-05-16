@@ -1,0 +1,56 @@
+.NavBar{
+    background-color: #0b3b9f;
+    padding-left: 15%;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+
+}
+
+.NavBar img{
+    max-width: 55px;
+    max-height: 55px;
+}
+
+.NavBar a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+.NavBarElement h3{
+    color: white;
+    align-self: center;
+}
+
+.NavBarElement Link{
+    color: white;
+    display: flex;
+}
+
+.NavBarElement {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.NavBarLoggedOut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavBarLoggedIn {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 85%;
+}
+.NavBarRightSide{
+    align-items: center;
+    display: flex;
+}
+.NavBarLeft{
+    align-items: center;
+    display: flex;
+}
