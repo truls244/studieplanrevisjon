@@ -16,7 +16,7 @@ class Config:
     JWT_SECRET_KEY = os.environ.get("JWT_SECRET_KEY")
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(days=7)
     JWT_TOKEN_LOCATION = ["cookies"]
-    JWT_COOKIE_SECURE = False ## OBS ENDRE TIL True FØR ME LEVERE
+    JWT_COOKIE_SECURE = False ## Needs to be Truw when in deployment
     JWT_COOKIE_CSRF_PROTECT = True
     JWT_CSFR_IN_COOKIES = True
 
