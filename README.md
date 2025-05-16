@@ -35,7 +35,7 @@ npm install
 npm start
 
 The frontend should now be running at:
-http://localhost:3000
+http://127.0.0.1:3000/
 
 
 
@@ -55,3 +55,5 @@ Ensure that ports 3000 (frontend) and 5000 (backend) are free.
 If you encounter issues with virtual environments or package installations, verify your Python and Node.js versions.
 
 Check that your .env or environment variables are set correctly for Flask if your app requires configuration.
+
+When using http://localhost:3000 chrome might not save the coockies, its recommended to use http://127.0.0.1:3000/ instead.
